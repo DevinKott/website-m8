@@ -9,12 +9,19 @@ body {
 }
 
 main {
-    width: 760px;
+    max-width: 760px;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .exp-skills {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
+}
+
+@media (max-width: 796px) {
+    .exp-skills {
+        flex-direction: column;  
+    }
 }
 
 .sep {
@@ -28,6 +35,12 @@ main {
 
 .push-right {
     margin-left: 2rem;
+}
+
+@media (max-width: 796px) {
+    .push-right {
+        margin-left: 0rem;
+    }
 }
 
 .separator {
