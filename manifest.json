@@ -2,14 +2,14 @@
     "name": "Devin Kott",
     "short_name": "Devin Kott",
     "start_url": ".",
-    "display": "browser",
+    "display": "standalone",
     "background_color": "#fff",
     "theme_color": "#000000",
     "description": "Devin Kott's website.",
     "icons": [
       {
         "src": "./assets/favicon.png",
-        "sizes": "64x64 32x32 24x24 16x16",
+        "sizes": "512x512 144x144 64x64 32x32 24x24 16x16",
         "type": "image/png"
       }
     ]
