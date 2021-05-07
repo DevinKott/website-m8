@@ -10,7 +10,8 @@
       {
         "src": "./assets/favicon.png",
         "sizes": "512x512 144x144 64x64 32x32 24x24 16x16",
-        "type": "image/png"
+        "type": "image/png",
+        "purpose": "any maskable"
       }
     ]
   }
