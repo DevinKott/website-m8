@@ -37,6 +37,11 @@
                     <h2>Experience</h2>
                     <p>I currently have two years of experience in industry.</p>
                     <div class="col">
+                        <h3>Software Development Engineer</h3>
+                        <span>Kodak Alaris</span>
+                        <span>June 2021 - Present (~<span id="cur-mths"></span> mths)</span>
+                    </div>
+                    <div class="col">
                         <h3>Software Development Intern</h3>
                         <span>Kodak Alaris</span>
                         <span>May 2020 - Feb 2021 (~10 mths)</span>
@@ -76,5 +81,22 @@
                 </p>
             </section>
         </main>
+        <script>
+            // Thank you T.J. (https://stackoverflow.com/a/2536445/15301978)
+            function monthDiff(d1, d2) {
+                var months;
+                months = (d2.getFullYear() - d1.getFullYear()) * 12;
+                months -= d1.getMonth();
+                months += d2.getMonth();
+                return months <= 0 ? 0 : months;
+            }
+
+            // Calculate the number of months between my current start date
+            // (June 1st, 2021) and the current date.
+            const startDate = new Date(2021, 5, 1);
+            const curDate = new Date();
+            const months = document.getElementById("cur-mths");
+            months.textContent = monthDiff(startDate, curDate);
+        </script>
     </body>
 </html>
